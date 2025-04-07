@@ -8,10 +8,24 @@
     <!-- https://www.w3schools.com/cssref/css_selectors.php -->
 
     <style>
+        input[type='text'] {
+            color: blue;
+        }
+
+        input {
+            color: brown;
+        }
+
+        label[for="passwordInput"] {
+            color: blue;
+        }
+
+
+
         /* styles divs AND sections */
         div,
         section {
-            color: white;
+            color: black;
         }
 
         /* # -> ids */
@@ -91,9 +105,9 @@
         <br>
         <input type="text">
         <br>
-        <label for="">Password:</label>
+        <label for="passwordInput">Password:</label>
         <br>
-        <input type="password">
+        <input id="passwordInput" type="password">
     </div>
     <div id="lists">
         <h2> Lists </h2>

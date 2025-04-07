@@ -6,10 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
     <link rel="stylesheet" href="main.css">
+
+    <style>
+        a {
+            color: green;
+        }
+
+        /* links you've been to */
+        a:visited {
+            color: red;
+        }
+
+        /* links currently being hovered */
+        a:hover {
+            color: orange;
+            cursor: default;
+        }
+
+        /* images currently being hovered */
+        img:hover {
+            cursor: pointer;
+        }
+
+        /* first li in the list */
+        /* div#hobbies ol li:nth-child(1) {
+            color: blue;
+        } */
+
+        /* first li in the list */
+        /* div#hobbies ol li:first-child {
+            color: blue;
+        } */
+
+
+        /* fifth li in the list */
+        /* div#hobbies ol li:nth-child(5) {
+            color: red;
+        } */
+        /* last li in the list */
+        div#hobbies ol li:last-child {
+            color: red;
+        }
+
+        /* odd */
+        /* div#hobbies ol li:nth-child(2n + 1) {
+            color: blue;
+        } */
+
+        /* even */
+        /* div#hobbies ol li::nth-child(even) {
+            color: blue;
+        } */
+
+        /* every li BUT the first one */
+        div#hobbies ol li:not(:first-child) {
+            color: blue;
+        }
+
+        /* first p on the page */
+        p:first-of-type {
+            color: blue;
+        }
+
+        /* last p on the page*/
+        p:last-of-type {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
     <div>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./fdgfdfg.html">Unvisited</a>
+
+        </nav>
         <div>
             <h1>About Me</h1>
         </div>
@@ -29,6 +101,16 @@
                 Mauris sed ultrices lorem, sed tempor enim. Curabitur eu elit eget justo sagittis mollis sed eget elit.
             </p>
             <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et pretium arcu. Proin aliquet blandit
+                odio, id aliquam sem placerat id. Aenean malesuada pellentesque elementum. Mauris feugiat tincidunt
+                risus, sit amet vestibulum libero scelerisque at. Praesent faucibus pharetra pharetra. Sed sodales, nisi
+                ac consequat laoreet, felis lacus eleifend libero, vel rutrum odio nisl sit amet orci. Suspendisse
+                faucibus malesuada elit, sit amet mattis dui venenatis quis. Nulla vitae faucibus tellus. Cras at
+                aliquam mi. Duis nulla eros, venenatis ornare pretium ac, eleifend sed lectus. Sed tristique, lectus non
+                placerat eleifend, est arcu dapibus enim, et gravida justo metus in lorem. Sed sit amet tempor lectus.
+                Mauris sed ultrices lorem, sed tempor enim. Curabitur eu elit eget justo sagittis mollis sed eget elit.
+            </p>
+            <p>
                 Proin in diam hendrerit, hendrerit justo nec, porttitor turpis. Nam a mi ultrices justo tincidunt
                 lacinia. Sed in purus sit amet ligula scelerisque pharetra sed vitae orci. Aliquam sed ante tortor.
                 Donec hendrerit massa id nulla commodo rhoncus. Donec sed massa ut odio aliquam finibus eu eget erat.
@@ -36,7 +118,7 @@
                 egestas ultrices lacus ac maximus. Ut sapien est, mattis mattis lorem a, euismod ultrices sapien.
             </p>
         </div>
-        <div>
+        <div id="hobbies">
             <h2>Hobbies</h2>
             <ol>
                 <li>
