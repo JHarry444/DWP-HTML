@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        div#boxModel {
+            border: 1px dotted black;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        div>p {}
+
+        #sticky {
+            max-height: 100px;
+            overflow-y: scroll;
+        }
+
+        #sticky>h3,
+        header {
+            position: sticky;
+            top: 0px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Positioning Elements</h1>
+        </header>
+        <section>
+            <h2>Box Model</h2>
+            <div>
+                <label for="input">Input:</label>
+                <input type="text" name="input" id="input">
+            </div>
+            <br>
+            <div id="boxModel">
+                <!-- Adds a padding/margin clockwise from top -->
+                <button>btn 1</button>
+                <button style="display: block;">btn 2</button>
+                <button style="display: none;">btn 3</button>
+
+                <p style="display: inline;">1</p>
+                <p style="display: inline;">2</p>
+            </div>
+            <div>
+                <img src="./me.jpg" height="20px">
+            </div>
+        </section>
+        <section>
+            <h2>Float</h2>
+            <!-- Shunts pic to the right and allows text wrapping -->
+            <img src="./me.jpg" height="200px" style="float: right;">
+            <!-- disables float for this element (doesn't work for anything embedded in it) -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et pretium arcu.
+                Proin aliquet blandit odio, id aliquam sem placerat id.
+                Aenean malesuada pellentesque elementum.
+                <img src="./me.jpg" alt="fluffy guy" height="50px">
+                Mauris feugiat tincidunt risus, sit amet vestibulum libero scelerisque at.
+                Praesent faucibus pharetra pharetra.
+                Sed sodales, nisi ac consequat laoreet, felis lacus eleifend libero, vel rutrum odio nisl sit amet orci.
+                Suspendisse faucibus malesuada elit, sit amet mattis dui venenatis quis. Nulla vitae faucibus tellus.
+                Cras at aliquam mi. Duis nulla eros, venenatis ornare pretium ac, eleifend sed lectus. Sed tristique,
+                lectus non placerat eleifend, est arcu dapibus enim, et gravida justo metus in lorem. Sed sit amet
+                tempor lectus. Mauris sed ultrices lorem, sed tempor enim. Curabitur eu elit eget justo sagittis mollis
+                sed eget elit.
+            </p>
+        </section>
+        <section>
+            <h2>Positioning</h2>
+            <img src="./me.jpg" height="200px" style="left: 50px;">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et pretium arcu.
+                Proin aliquet blandit odio, id aliquam sem placerat id.
+                Aenean malesuada pellentesque elementum.
+                Mauris feugiat tincidunt risus, sit amet vestibulum libero scelerisque at.
+                Praesent faucibus pharetra pharetra.
+                Sed sodales, nisi ac consequat laoreet, felis lacus eleifend libero, vel rutrum odio nisl sit amet orci.
+                Suspendisse faucibus malesuada elit, sit amet mattis dui venenatis quis. Nulla vitae faucibus tellus.
+                Cras at aliquam mi. Duis nulla eros, venenatis ornare pretium ac, eleifend sed lectus. Sed tristique,
+                lectus non placerat eleifend, est arcu dapibus enim, et gravida justo metus in lorem. Sed sit amet
+                tempor lectus. Mauris sed ultrices lorem, sed tempor enim. Curabitur eu elit eget justo sagittis mollis
+                sed eget elit.
+            </p>
+            <div id="sticky">
+                <h3>Sticky</h3>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
