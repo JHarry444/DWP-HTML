@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colours Fonts and Sizing</title>
+    <style>
+        img {
+            /* width: 1000px; */
+            width: 50%
+        }
+
+        p:first-of-type {
+            /* em -> relative to the parent's font size (default font size) */
+            font-size: 0.5em;
+        }
+
+        p:nth-child(2) {
+            /* fixed size (standard way of doing text) */
+            font-size: 12pt;
+            /* have to select a 'family' of fonts as not all fonts are supported by all browsers */
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-decoration: underline;
+            font-style: italic;
+
+            color: blue;
+            /* adds a shadow to the text (USE THE BROWSER) */
+            text-shadow: -2px 2px 2px black;
+
+        }
+
+        p:last-of-type {
+            font-size: 2em;
+
+            /* red green and blue from 0 -> 255 (8 bits/1 byte) */
+            /* alpha controls transparency from 0 -> 1 */
+            color: rgba(89, 130, 133, 0.184);
+
+            color: hsla(192, 100%, 50%, 0.821);
+        }
+    </style>
+</head>
+
+<body>
+    <p>text text <img src="./me.jpg"> text text</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus neque elit, fringilla at tellus vitae, placerat
+        suscipit turpis. Proin dignissim ex vel lorem ultrices, nec hendrerit metus fermentum. Integer pretium consequat
+        massa, sed lobortis tortor vehicula vitae. Etiam vitae sagittis nulla. Nam semper nibh eu mi bibendum consequat.
+        Suspendisse porttitor imperdiet quam vitae venenatis. Sed sit amet purus vel ligula aliquam venenatis in vitae
+        risus.</p>
+    <p>Quisque diam diam, egestas vel justo ut, viverra lobortis erat. Mauris rutrum tincidunt neque at convallis. Nulla
+        quis arcu imperdiet, tincidunt nisl non, ornare tellus. Donec accumsan bibendum ex in blandit. Donec risus ex,
+        suscipit quis suscipit fermentum, porta id dui. Maecenas et facilisis purus. Aenean elementum ut eros sed
+        placerat. Aliquam iaculis tortor lectus, quis porta quam tincidunt nec. Donec fringilla diam commodo venenatis
+        consequat.</p>
+</body>
+
+</html>
