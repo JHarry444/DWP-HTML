@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Ex</title>
+    <!-- https://www.w3schools.com/cssref/css_selectors.php -->
+
+    <style>
+        /* styles divs AND sections */
+        div,
+        section {
+            color: white;
+        }
+
+        /* # -> ids */
+        h2#inputs {
+            color: blue;
+        }
+
+        /* . -> classes */
+        h2.subheading {
+            color: yellow;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        /* any <p> anywhere inside a <div> */
+        div p {
+            color: purple;
+        }
+
+        /* a <p> DIRECTLY inside a <div> */
+        div>p {
+            color: lightblue;
+        }
+
+        /* Finds any <a> that is a sibling of an h2 */
+        h2~a {
+            color: red;
+        }
+
+        /* Finds any <a> that is next to an h2 */
+        h2+a {
+            color: darkgreen;
+        }
+
+        p {
+            color: orange;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div>
+        <h1> Heading 1 </h1>
+        <h2 style="color: pink;"> Headings </h2>
+        <h3> Heading 3 </h3>
+        <h4> Heading 4 </h4>
+        <h5> Heading 5 </h5>
+        <h6> Heading 6 </h6>
+    </div>
+    <div>
+        <h2 class="subheading">Links</h2>
+        <a href="https://www.qa.com/"> QA </a>
+        <a href="./about.html">
+            <img src="./me.jpg" height="50px">
+        </a>
+        <a href="./about.html" target="_blank">
+            <img src="./me.jpg" height="50px">
+        </a>
+        <a href="#lists"> Lists </a>
+    </div>
+    <div>
+        <h2 class="subheading">Paragraphs</h2>
+        <p> First paragraph with <strong>bold</strong> or <em>italicised</em> text</p>
+        <h4>Random h4</h4>
+        <p> Second paragraph </p>
+        <section>
+            <p>NOT directly inside a div</p>
+        </section>
+    </div>
+    <div>
+        <h2 id="inputs" class="subheading">Inputs</h2>
+        <label for="">Username:</label>
+        <br>
+        <input type="text">
+        <br>
+        <label for="">Password:</label>
+        <br>
+        <input type="password">
+    </div>
+    <div id="lists">
+        <h2> Lists </h2>
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+            <li>Fifth</li>
+        </ul>
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+            <li>Fifth</li>
+        </ol>
+    </div>
+    <p> First paragraph with <strong>bold</strong> or <em>italicised</em> text</p>
+    <p> First paragraph with <strong>bold</strong> or <em>italicised</em> text</p>
+    <p> First paragraph with <strong>bold</strong> or <em>italicised</em> text</p>
+</body>
+
+</html>
