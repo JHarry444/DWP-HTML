@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <style>
+        ul {
+            /* list-style-image: url("me.jpg"); */
+            list-style-position: outside;
+            list-style-type: upper-latin;
+        }
+
+        table {
+            /* makes cells share a border rather than duplicating them */
+            border-collapse: collapse;
+            /* moves the caption from top to bottom */
+            caption-side: bottom;
+            /* hides empty cells (doesn't work if borders are collapsed) */
+            empty-cells: hide;
+        }
+
+        /* styles td's when you hover over them */
+        td:hover {
+            background-color: pink;
+            cursor: pointer;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>Lists</h2>
+            <ul>
+                <li>Jordan Harrison</li>
+                <li>Shafeeq</li>
+                <li>Mike</li>
+                <li>Sam</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Tables</h2>
+            <table>
+                <caption>Trainers</caption>
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Specialism
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Jordan H
+                        </td>
+                        <td>
+                            Java
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Shafeeq
+                        </td>
+                        <td>
+                            Oracle
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Cameron
+                        </td>
+                        <td>
+                            Web
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Cameron
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
